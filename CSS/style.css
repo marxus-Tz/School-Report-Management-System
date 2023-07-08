@@ -15,7 +15,7 @@ color:var(--black)
     --primary-color:#E1B0AC;
     --secondary-color:#F2D4D6; 
     --White-lilac:#F8F8F9;
-    --Blue:#002349;
+    --Blue:#041e42;
     --gold :#957C3D;
     --Cardin-Green:#0C1A1A;
     --downy-teal:#6ACFC7;
@@ -182,7 +182,7 @@ display:none;
    text-align: center;
 }
 .home .row .content h3{
-    color: var(--rose-pink);
+    color: #088178;
     margin-bottom: 1rem;
     font-size: 3.5rem;
     line-height: 1;
@@ -258,7 +258,62 @@ display:none;
  
   /* style for count section banner ends here */
 
+/* style for newsletter section start here*/
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/b14.png);
+    background-position: 20px 30px ;
+    background-repeat: no-repeat;
+    background-color: #041e42;
 
+}
+
+#newsletter h4{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+
+#newsletter .form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+#newsletter .form input{
+    height: 3.125rem;
+    padding: 0 1.5em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: #088178;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    color: #fff;
+    width: 50%;
+    align-items: center;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* style for newsletter section ends here */
 
 /* responsive design with media queries */
 
@@ -334,8 +389,25 @@ display:none;
      .count {
         flex-wrap: wrap;
         gap: 1rem;
-        flex: 1 1 20rem;
+        flex: 1 1 40rem;
         align-items: center;
+    }
+
+    #newsletter {
+      flex-direction: column;
+    
+    }
+
+    #newsletter .form{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #newsletter button{
+    justify-content:center ;
+      height: 6rem;
     }
     
     }
