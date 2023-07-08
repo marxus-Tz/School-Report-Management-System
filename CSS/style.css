@@ -218,6 +218,46 @@ display:none;
  }
 
 
+ /* style for count section banner starts here */
+.count{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 70%;
+}
+
+.count .box-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.count .box-container .box{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.count .box-container .box i{
+   color:yellow;
+   font-weight: 600;
+   font-size:3rem;
+}
+
+.count .box-container .box  h3,p{
+    color:var(--Blue);
+    font-size: 1.5rem;
+ }
+ 
+  /* style for count section banner ends here */
+
 
 
 /* responsive design with media queries */
@@ -290,6 +330,13 @@ display:none;
       align-items: center;
       margin-left: 10rem;
      }
+
+     .count {
+        flex-wrap: wrap;
+        gap: 1rem;
+        flex: 1 1 20rem;
+        align-items: center;
+    }
     
     }
 
