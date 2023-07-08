@@ -264,7 +264,7 @@ display:none;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(images/b14.png);
+    background-image: url("images/news.avif");
     background-position: 20px 30px ;
     background-repeat: no-repeat;
     background-color: #041e42;
