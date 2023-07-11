@@ -270,47 +270,53 @@ text-transform:capitalize;
 /* swipper slider css starts here */
 
 .swiper {
-    position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     margin-top: 4rem;
-    margin-left: 20rem;
     margin-bottom: 7rem;
-
   }
+
+  .swiper .latest-news {
+    color: var(--black);
+    font-size: 15px;
+    text-align:center ;
+    margin: 6px ;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+}
     
   .swiper-wrapper{
     align-items: center;
   }
 
   .swiper-slide {
-    width: 200px;
-    height: 250px;
-    border-radius: 7px;
+    border-radius: 9px;
+  }
+
+  .swiper-slide-active{
+    transform: scale(1.2);
+    transition: 4s;
   }
 
   .swiper-slide img {
-    position: relative;
-    width: 250px;
-    height: 250px;
+    min-width: 100%;
+    min-height: 100%;
     border-radius: 7px;
     cursor: pointer;
+    
   }
 
-
-
-
+  .info{
+    width: 100%;
+    padding: 8px 0;
+    text-align: justify;
+    bottom: 0;
+    background:var(--button-color) ;
+    border-radius: 0 0 5px 5px;
+  }
 
 /* swipper slider css ends here */
-
-
-
-
-
-
-
-
-
 /* style for newsletter section start here*/
 #newsletter {
     display: flex;
@@ -478,17 +484,19 @@ text-transform:capitalize;
 
 
     .swiper {
-        width: 100%;
-        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 100%;
         margin-left: 1rem;
     
       }
 
       .swiper-slide img {
-        width: 270px;
-        height:250px;
         border-radius: 10px;
         align-items: center;
+        width: 100%;
       }
     
     }
@@ -501,15 +509,13 @@ text-transform:capitalize;
         }
 
 /* footer css codes starts here */
-
-
 .footer{
     min-width: 100%;
     padding: 80px 13% 70px;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 3rem;
     background:var(--white);
     position: relative;
     left: 0;
@@ -530,7 +536,7 @@ margin: 10px;
 }
 .footer-content i{
     margin-bottom: 12px;
-    color: yellow;
+    color: var(--Blue);
 
 }
 .footer-content li a{
@@ -553,7 +559,7 @@ margin: 10px;
 .icons a{
     display: inline-block;
     font-size: 22px;
-    color: yellow;
+    color: var(--Blue);
     margin-right: 17px;
     transition: all .40s ease;
     font-weight: 700;
