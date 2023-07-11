@@ -5,8 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLP Final Project</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100&family=Vollkorn:wght@900&display=swap"
+        rel="stylesheet">
+
+    <!---boxicons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
 
 </head>
@@ -87,18 +99,60 @@
 
     <!-- scroll section starts here -->
 
+    <!-- what we offer section -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="image">
+                <img src="images/student.avif" alt="">
+            </div>
+            </div>
+            <div class="content">
+                <h3>Learning is a treasure </h3>
+                <br>
+                <span>that will follow its owner everywhere.</span><br>
+                <a href="#" class="btn">About us</a>
+        </div>
+
+    </section>
+     <!-- what we offer section ends here-->
 
 
-
-
-
-
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/b1.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b10.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b16.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b19.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b16.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b17.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b19.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b20.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/b26.jpg" alt="">
+      </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
      <!-- scroll section ends here -->
 
-
- 
-
-    
 
     <section id="newsletter" class="section-pl section-ml">
         <div class="newstext">
@@ -115,8 +169,115 @@
     <!-- newsletter section ends here -->
 
 
+    <!-- footer section starts here -->
+
+    <section class="footer">
+        <div class="footer-content">
+            <h4>FOLLOW US</h4>
+            <div class="icons">
+                <a href="#"><i class='bx bxl-facebook-circle'></i> </a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-content">
+            <h4>Information</h4>
+            <div class="icons">
+                <a href="#"><i class='bx bx-send'>
+                        <p>Address: P.O BOX 000</p>
+                    </i></a></a><br>
+                <a href="#"><i class='bx bx-envelope'>
+                        <p>school@info.org.tz</p>
+                    </i></a><br>
+                <a href="#"><i class='bx bx-phone-call'>
+                        <p>+255 700 000 000</p>
+                    </i></a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-content">
+                <h4>Featured Links</h4>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </div>
+            <div class="footer-content">
+                <h4>Help</h4>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Condition</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Download App</a></li>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- footer section ends here -->
+
+
 
     <script src="JS/style.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Default options
+        var swiperOptions = {
+          slidesPerView: 3,
+          spaceBetween: 100,
+          centeredSlide: true,
+          grabCursor: true,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        };
+      
+        // Media query for devices with a maximum width of 768px (smaller screens)
+        if (window.matchMedia("(max-width: 768px)").matches) {
+          swiperOptions.slidesPerView = 1;
+          swiperOptions.spaceBetween = 20;
+          swiperOptions.loop = true;
+          swiperOptions.centeredSlide = true;
+          swiperOptions.grabCursor = true;
+        }
+      
+        // Media query for devices with a maximum width of 1024px (medium screens)
+        if (window.matchMedia("(max-width: 1024px)").matches) {
+          swiperOptions.slidesPerView = 2;
+          swiperOptions.spaceBetween = 30;
+          swiperOptions.loop = true;
+          swiperOptions.centeredSlide = true;
+          swiperOptions.grabCursor = true;
+        }
+      
+        // Media query for devices with a maximum width of 1440px (larger screens)
+        if (window.matchMedia("(max-width: 1440px)").matches) {
+          swiperOptions.slidesPerView = 3;
+          swiperOptions.spaceBetween = 10;
+          swiperOptions.loop = true;
+          swiperOptions.centeredSlide = true;
+          swiperOptions.grabCursor = true;
+        }
+      
+        // Initialize the swiper with the modified options
+        var swiper = new Swiper(".mySwiper", swiperOptions);
+      </script>
+      
 
 </body>
 
