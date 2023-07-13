@@ -250,7 +250,7 @@ text-transform:capitalize;
     }
 
     .count .box-container .box i{
-    color:yellow;
+    color:var(--black-currant);
     font-weight: 600;
     font-size:3rem;
     }
