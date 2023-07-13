@@ -222,11 +222,6 @@ text-transform:capitalize;
     }
 
     
-    .home .row .image img{
-        width: 100%;
-    }
-
-
     /* style for count section banner starts here */
     .count{
 
@@ -266,19 +261,21 @@ text-transform:capitalize;
     }
     
     /* style for count section banner ends here */
-
 /* swipper slider css starts here */
 
 .swiper {
+    position: relative;
     max-width: 100%;
     height: 100%;
     margin-top: 4rem;
     margin-bottom: 7rem;
+    margin-left: 20rem;
+    margin-right: 7rem;
   }
 
   .swiper .latest-news {
     color: var(--black);
-    font-size: 15px;
+    font-size: 4rem;
     text-align:center ;
     margin: 6px ;
     margin-top: 5rem;
@@ -287,6 +284,7 @@ text-transform:capitalize;
 }
     
   .swiper-wrapper{
+    position: relative;
     align-items: center;
   }
 
@@ -312,11 +310,44 @@ text-transform:capitalize;
     padding: 8px 0;
     text-align: justify;
     bottom: 0;
-    background:var(--button-color) ;
+    background:rgb(0, 0, 0,0.6);
     border-radius: 0 0 5px 5px;
   }
 
+
+  .info h3{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 7px;
+  }
+
+  .info p{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 7px;
+  }
+
+  .info a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 8px;
+    float: right;
+    margin-top: -28px;
+    margin-right: 7px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+  }
+
+  .swiper-pagination{
+    bottom: 0 !important;
+  }
+
 /* swipper slider css ends here */
+
+
 /* style for newsletter section start here*/
 #newsletter {
     display: flex;
@@ -374,6 +405,9 @@ text-transform:capitalize;
 /* style for newsletter section ends here */
 
 
+
+
+
 /* responsive design with media queries */
 @media (max-width:991px){
 
@@ -398,12 +432,14 @@ text-transform:capitalize;
     .header .flex .navbar{
     display: none;
     position:absolute;
+    height: 50vh;
+    width: 80vh;
     top:99%;
     left:0;
     right:0;
     border-top:.1rem solid var(--light-white);
     border-bottom:.1rem solid var(--light-white);
-    background-color:var(--light-bg);
+    background-color:var(--white_max);
     clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
     }
 
@@ -414,10 +450,16 @@ text-transform:capitalize;
     
     .header .flex .navbar a{
     display:block;
-    margin:2rem;
-
-    
+    margin:3rem;
+    text-align: center;
+    margin-right: 30rem;
+    color: var(--black);
+    font-size: 3.5rem;
+   
     }
+
+
+
 
     .home .row{
         display: flex;
@@ -441,6 +483,11 @@ text-transform:capitalize;
       align-items: center;
       margin-left: 10rem;
      }
+     .home .row .image img{
+        width: 100%;
+     }
+
+
 
      .count {
         display: flex;
